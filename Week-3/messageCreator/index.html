@@ -10,7 +10,7 @@
       <h1>Happy Birthday Message Creator</h1>
     </header>
     <main>
-      <form  action="">
+      <form method="post" action="/api/path">
         <!-- Message section -->
         <div>
           <label for="message">Message?</label>
@@ -19,7 +19,7 @@
         <!-- Email section -->
         <div>
           <label for="email">Email adress?</label>
-          <input name="email" id="email" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+          <input name="email" id="email" type="email" pattern="[a-zA-Z0-9-_.]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0- 9-]+)*" required/>
         </div>
         <!-- Date section -->
         <div>
