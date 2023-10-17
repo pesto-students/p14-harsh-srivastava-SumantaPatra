@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant review</title>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Reviews</h1>
+        <nav>
+          <a target="_blank" href="./index.html">Home</a>
+          <a  href="#">AddReview</a>
+          <a target="_blank" href="./about.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Add Review</h2>
+        <form action="">
+            <!-- Name section -->
+            <div>
+                <label for="name">Name?</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <!-- Restaurant section -->
+            <div>
+                <label for="select-restaurant">Restaurant?</label>
+                <select name="restaurant-name" id="select-restaurant">
+                    <option value="mainstreetcafe">mainstreetcafe</option>
+                    <option value="greekhouse">greekhouse</option>
+                </select>
+            </div>
+            <!-- Date of visit section -->
+            <div>
+                <label for="visit-date">Date of visit?</label>
+                <input type="date" name="visit-date" id="visit-date">
+            </div>
+            <!-- Rating section -->
+            <div>
+                <label for="restaurant-rating">Rating?</label>
+                <input max="5" min="1" type="number" name="rating" id="restaurant-rating">
+            </div>
+            <!-- Details section -->
+            <div>
+                <label for="restaurant-details">Details?</label>
+                <textarea name="restaurant-details" id="restaurant-details" cols="30" rows="5"></textarea>
+            </div>
+            <!-- submit section -->
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2022 Restaurant Review</p>
+    </footer>
+</body>
+</html>
