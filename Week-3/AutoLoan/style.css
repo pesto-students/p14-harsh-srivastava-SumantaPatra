@@ -1,0 +1,55 @@
+
+.container{
+   text-align: center;
+   margin: 5px;
+}
+.container .offerTitle{
+    text-align: center;
+    background-color: #00b3b3;
+    padding: 15px;
+    color: #ffffff;
+}
+.container .offerContents{
+    background-color: #fafafa;
+    padding: 20px;
+}
+.container .offer{
+    display: inline-block;
+    /* padding: 0px 50px; */
+    width: 400px;
+    margin: 4px;
+    text-align: center;
+}
+.container > h1{
+    text-align: center;
+    font-size: 16px;
+    color: #444444;
+}
+table{
+   border-collapse: collapse;
+   width: 100%;
+   /* border: 1px solid red; */
+}
+table td,th{
+    text-align: left;
+    /* padding: 15px; */
+    font-size: 12px;
+    border-bottom: 1px solid #f1f1f1;
+}
+table th{
+    color: #777777;
+    font-weight: bold;
+    padding: 10px;
+}
+table td{
+    color: #444444;
+    font-weight: lighter;
+    padding: 20px 10px;
+}
+.finalValue{
+    font-weight: 12px;
+    color: #2222ff;
+}
+/* tr{
+    border-bottom: 1px solid #cccccc;
+} */
