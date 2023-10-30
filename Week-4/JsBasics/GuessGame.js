@@ -1,3 +1,10 @@
+
+// Write a function called playGuessingGame() that has two parameters:
+
+// numToGuess is the number that the user has to guess.
+// totalGuesses is the total number of times the user is allowed to guess the number. The default value should be 10.
+// The playGuessingGame() function should return the number of guesses the user took to enter the correct number. Ex: If the user guesses the correct number after 3 tries, the function should return 3. If the user does not guess the correct number before the number of guesses exceeds totalGuesses, the function should return 0.
+
 function playGuessingGame(numToGuess,totalGuesses=10){
     let defaultMessage = "Enter a number between 1 and 1000"
     for(let i=0; i<totalGuesses; i++){
