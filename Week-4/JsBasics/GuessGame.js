@@ -1,4 +1,3 @@
-const prompt = require("prompt-sync")();
 function playGuessingGame(numToGuess,totalGuesses=10){
     let defaultMessage = "Enter a number between 1 and 1000"
     for(let i=0; i<totalGuesses; i++){
