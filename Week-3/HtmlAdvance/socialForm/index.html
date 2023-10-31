@@ -1,0 +1,54 @@
+<!-- description:
+The form should:
+Use the POST method and the "multipart/form-data" enctype
+Submit to
+Use a <label> for each form field and the label text shown in the image above
+Use a <div> to surround each label and form widget and a <div> around the submit button
+Use a text <input> with name and id "fullName" to get the user's name
+Use a text <input> with name and id "email" to get the user's email address
+Use a <textarea> with 3 rows, 50 columns, and name and id "about" to get a short description about the user
+Use a text <input> with type "file" and name and id "picture" to get the user's image
+Use a submit <input> button
+Use the required attribute for name and email fields -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialForm</title>
+</head>
+<body>
+    <header>
+        <h1>Join a social network</h1>
+    </header>
+    <main>
+        <form method="post" action="/api/form" enctype="multipart/form-data">
+            <!-- Name section -->
+            <div>
+                <label for="fullName">Full name:</label>
+                <input type="text" name="fullName" id="fullName">
+            </div>
+            <!-- Email section -->
+            <div>
+                <label for="email">Email address:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <!-- About section -->
+            <div>
+                <label for="about">About you:</label>
+                <textarea name="about" id="about" cols="50" rows="3"></textarea>
+            </div>
+            <!-- file section -->
+            <div>
+                <label for="picture">Photo:</label>
+                <input type="file" name="picture" id="picture">
+            </div>
+            <!-- submit section -->
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

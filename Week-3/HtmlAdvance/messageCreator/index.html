@@ -1,0 +1,81 @@
+<!-- The form should:
+
+Use the regular expression [a-zA-Z0-9-_.]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0- 9-]+)* for the email address <input> to verify the user enters what looks to be an
+email address
+
+Use a date <input> for specifying a date to send the message
+Use a color <input> for selecting the message color
+Use a number <input> with a default value of 0, minimum of 0, and maximum of 10 for number of times the message blinks
+Use a range <input> with a default value of 20, minimum of 0, and maximum of 50 for the music volume
+Use a submit <button> that reads "Send Birthday Message"
+Specify an id attribute for all form elements that matches the given for attribute of each
+associated <label>
+
+Specify a name attribute for all form elements that matches each element's id attribute -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BirthdayMessage</title>
+  </head>
+  <body>
+    <header>
+      <h1>Happy Birthday Message Creator</h1>
+    </header>
+    <main>
+      <form method="post" action="/api/path">
+        <!-- Message section -->
+        <div>
+          <label for="message">Message?</label>
+          <input name="message" id="message" type="text" />
+        </div>
+        <!-- Email section -->
+        <div>
+          <label for="email">Email adress?</label>
+          <input name="email" id="email" type="email" pattern="[a-zA-Z0-9-_.]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0- 9-]+)*" required/>
+        </div>
+        <!-- Date section -->
+        <div>
+          <label for="message-date">Date to send?</label>
+          <input type="date" name="message-date" id="message-date" />
+        </div>
+        <!-- Color section -->
+        <div>
+          <label for="message-color">Message color?</label>
+          <input type="color" name="message-color" id="message-color" />
+        </div>
+        <!-- Blink count section -->
+        <div>
+          <label for="blink-count">Number of blinks?</label>
+          <input
+            value="0"
+            min="0"
+            max="10"
+            type="number"
+            name="blink-count"
+            id="blink-count"
+          />
+        </div>
+        <!-- Volume section -->
+        <div>
+          <label for="music-volume">Music volume?</label>
+          <input
+            value="20"
+            min="0"
+            max="50"
+            type="range"
+            name="music-volume"
+            id="music-volume"
+          />
+        </div>
+        <!-- Submit section -->
+        <div>
+          <input type="submit" value="Send Birthday Message" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

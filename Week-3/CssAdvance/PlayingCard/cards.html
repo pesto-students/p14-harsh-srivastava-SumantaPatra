@@ -1,0 +1,29 @@
+<!-- description:Add the following CSS to styles.css:
+
+Add a linear-gradient background to the .table rule that goes from forestgreen to darkgreen.
+Add a border-radius property of 5px and a black box-shadow property with 3px x and y offsets to the .card rule.
+Add absolute positioning to the .cardTop rule, and position the card 150px from the left and 100px from the top of the container edge.
+Add absolute positioning to the .cardBottom rule, and position the card 240px from the left and 120px from the top of the container edge.
+Add a z-index property to the .cardTop and .cardBottom rules to make the top card appear on top.
+Add absolute positioning to the .topLeft selector to place the symbol 2px from the left and top edges of the card.
+Add absolute positioning to the .bottomRight selector to place the symbol 2px from the right and bottom edges of the card. -->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Playing cards</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="table">
+      <div class="card cardTop cardBlack">A
+         <span class="spade topLeft">&#9824;</span>
+         <span class="spade bottomRight">&#9824;</span>
+      </div>
+      <div class="card cardBottom cardRed">5
+         <span class="heart topLeft">&#10084;</span>
+         <span class="heart bottomRight">&#10084;</span>
+      </div>
+   </div>
+</body>
+</html>
